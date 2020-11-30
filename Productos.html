@@ -11,67 +11,190 @@
 
 <body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-nav justify-content-center mx-auto">
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-nav justify-content-center mx-auto text-center justify-content-md-center">
             <a class="navbar-brand"> <img src="/iconB48.png"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active text-center">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Productos.html">Productos<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Efectos.html">Efectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Indicaciones.html">Indicaciones</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos<span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Productos.html">Almohadillas</a>
+                            <a class="dropdown-item" href="#">Porta Mat</a>
+                            <a class="dropdown-item" href="#">Kits de regalo</a>
+                            <a class="dropdown-item" href="#">Especial fiestas</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contacto.html">Contacto</a>
                     </li>
-                    <!--<li class="nav-item">
-				  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li>-->
                 </ul>
             </div>
+            <!--<li class="nav-item text-center">
+                        <a class="nav-link" href="Efectos.html">Efectos</a>
+                    </li>
+                    <li class="nav-item text-center ">
+                        <a class="nav-link" href="Indicaciones.html">Indicaciones</a>
+                    </li>-->
         </nav>
 
         <div id="menu px-lg-5">
-            <br/>
+            <br />
             <div class="row justify-content-center align-items-center mx-lg-n5">
-                <div class="col-md-4 justify-content-center py-3 px-lg-5 ">
-                    <img src="/productos.png" class="rounded w-100" alt="...">
+                <div class="col-auto justify-content-center py-3 px-lg-5 ">
+                    <h1 class="text-center m-3">Productos artesanales y terapéuticos.</h1>
+                    <p class="text-center m-3">Almohadillas térmicas, porta mats, sahumerios, esencias, y mucho más...
+                    </p>
                 </div>
-                <div class="col-auto col-md-6 justify-content-center py-3 px-lg-5 ">
-                    <h2 class="text-center m-3">Almohadillas relajantes y más</h2>
-                    <p class="text-center p-3">Antifaces y almohadillas térmicas relajantes, con semillas de lino y flores de lavanda org&aacute;nica. Les invitamos a que prueben nuestros antifaces, se tomen un descanso y se dejen llevar por el aroma de la lavanda y la tranquilidad
-                        al conectarse con ustedes mismxs. Pueden usarlos ❄ fríos para disminuir dolores de cabeza, cansancio visual y hasta para bajar la fiebre! También pueden usar la almohadilla en 🌡caliente para dolores musculares, cervicales, menstruales
-                        y mucho más!
-                    </p>
-                    <p class="text-center p-3">O simplemente al natural, para conectarse con el aroma de la lavanda y disfrutar de sus propiedades curativas.
-                    </p>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="justify-content-center text-center mx-auto">
+        <img src="/separador.png" class="img-fluid rounded ">
+    </div>
+
+    <div class="container px-lg-5">
+        </br>
+        <div class="row align-items-center mx-lg-n5">
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Productos.html">
+                    <img src="/productos.png" class="rounded w-100">
+                    <h1 class="text-center">Almohadillas</h1>
+                </a>
+            </div>
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Efectos.html">
+                    <img src="/efectos.png" class="rounded w-100">
+                    <h1 class="text-center">Porta Mats</h1>
+                </a>
+            </div>
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Indicaciones.html">
+                    <img src="/indicaciones.png" class="rounded w-100">
+                    <h1 class="text-center">Kits de regalo</h1>
+                </a>
+            </div>
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Indicaciones.html">
+                    <img src="/indicaciones.png" class="rounded w-100">
+                    <h1 class="text-center">Otro</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="justify-content-center text-center mx-auto">
+        <img src="/separador.png" class="img-fluid rounded ">
+    </div>
+
+    <div id="container" class="m-3">
+
+        <div class="row justify-content-center align-items-center mx-lg-n5">
+            <div class="col-md-4 justify-content-center py-3 px-lg-5 ">
+                <img src="/productos.png" class="rounded w-100" alt="...">
+            </div>
+            <div class="col-auto col-md-6 justify-content-center py-3 px-lg-5 ">
+                <h2 class="text-center m-3">Almohadillas relajantes</h2>
+                <p class="text-center p-3">Antifaces y almohadillas térmicas relajantes, con semillas de lino y flores
+                    de lavanda org&aacute;nica. Les invitamos a que prueben nuestros antifaces, se tomen un descanso y
+                    se dejen llevar por el aroma de la lavanda y la tranquilidad
+                    al conectarse con ustedes mismxs. Pueden usarlos ❄ fríos para disminuir dolores de cabeza, cansancio
+                    visual y hasta para bajar la fiebre! También pueden usar la almohadilla en 🌡caliente para dolores
+                    musculares, cervicales, menstruales
+                    y mucho más!
+                </p>
+                <p class="text-center p-3">O simplemente al natural, para conectarse con el aroma de la lavanda y
+                    disfrutar de sus propiedades curativas.
+                </p>
+            </div>
+            <div class="container px-lg-5">
+            </br>
+            <div class="row align-items-center mx-lg-n5">
+                <div class="col justify-content-center py-3 px-lg-3 ">
+                    <a href="Productos.html">
+                        <img src="/productos.png" class="rounded w-100">
+                        <h1 class="text-center">Almohadillas</h1>
+                    </a>
+                </div>
+                <div class="col justify-content-center py-3 px-lg-3 ">
+                    <a href="Efectos.html">
+                        <img src="/efectos.png" class="rounded w-100">
+                        <h1 class="text-center">Efectos</h1>
+                    </a>
+                </div>
+                <div class="col justify-content-center py-3 px-lg-3 ">
+                    <a href="Indicaciones.html">
+                        <img src="/indicaciones.png" class="rounded w-100">
+                        <h1 class="text-center">Indicaciones</h1>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="justify-content-center text-center mx-auto">
-            <img src="/separador.png" class="img-fluid rounded ">
         </div>
+    </div>
 
-    </header>
+    <div class="row justify-content-center align-items-center mx-lg-n5">
+        <div class="col-md-4 justify-content-center py-3 px-lg-5 ">
+            <img src="/productos.png" class="rounded w-100" alt="...">
+        </div>
+        <div class="col-auto col-md-6 justify-content-center py-3 px-lg-5 ">
+            <h2 class="text-center m-3">Porta Mats</h2>
+            <p class="text-center p-3">Porta mats tejidos en macramé y en lienzo.</p>
+        </div>
+        <div class="container px-lg-5">
+        </br>
+        <div class="row align-items-center mx-lg-n5">
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Productos.html">
+                    <img src="/productos.png" class="rounded w-100">
+                    <h1 class="text-center">Versión tiras</h1>
+                </a>
+            </div>
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Efectos.html">
+                    <img src="/efectos.png" class="rounded w-100">
+                    <h1 class="text-center">Bolso tejido</h1>
+                </a>
+            </div>
+            <div class="col justify-content-center py-3 px-lg-3 ">
+                <a href="Indicaciones.html">
+                    <img src="/indicaciones.png" class="rounded w-100">
+                    <h1 class="text-center">Bolso tela</h1>
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <div id="container" class="m-3">
+    </div>
+</div>
 
+    <!--
         <div class="row justify-content-center align-items-top mx-auto">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 justify-content-center m-3 p-3 mx-auto ">
                 <img src="/benjui/antifaz1x1.jpg" class="img-fluid rounded" alt="...">
@@ -120,9 +243,12 @@
         <div class="row justify-content-center align-items-top mx-auto">
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <h1 id="Antifaces">Antifaces</h1>
-                <p>Ideales para usar a temperatura ambiente y conciliar mejor el sueño o intensificar la relajación y meditación</p>
+                <p>Ideales para usar a temperatura ambiente y conciliar mejor el sueño o intensificar la relajación y
+                    meditación</p>
                 <p>También son excelentes para disminuir dolores de cabeza o cansancio visual, utilizándolos fríos.</p>
-                <p>Si querés saber cómo enfriarlo, te recomendamos que visites la sección de Indicaciones donde encontrarás el modo de uso. Podes hacer <a href="Indicaciones.htlm #ModoDeUso">click acá</a>, o buscar la sección en el navegador superior.</p>
+                <p>Si querés saber cómo enfriarlo, te recomendamos que visites la sección de Indicaciones donde
+                    encontrarás el modo de uso. Podes hacer <a href="Indicaciones.htlm #ModoDeUso">click acá</a>, o
+                    buscar la sección en el navegador superior.</p>
             </div>
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <div id="carouselExampleControls" class="carousel slide p-3" data-ride="carousel">
@@ -167,7 +293,8 @@
                 <li>10 x 20 [cm]</li>
                 <li>12 x 22 [cm]</li>
                 <p>Hacemos otras medidas a pedido.</p>
-                <p>Para saber más sobre los efectos te recomendamos que hagas <a href="Efectos.html">click acá</a>, y si querés saber el modo de uso, hacé <a href="Indicaciones.html #ModoDeUso">click acá</a>.</p>
+                <p>Para saber más sobre los efectos te recomendamos que hagas <a href="Efectos.html">click acá</a>, y si
+                    querés saber el modo de uso, hacé <a href="Indicaciones.html #ModoDeUso">click acá</a>.</p>
             </div>
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <div id="carouselExampleControls" class="carousel slide p-3" data-ride="carousel">
@@ -203,7 +330,8 @@
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <h1 id="Cervical" class="p-3">Almohadillas para la cervical</h1>
                 <p>Ideales para usarlas calientes y disminuir dolores cervicales o tensiones de cuello.</p>
-                <p>Tienen una forma que se adapta al cuello y los hombros, por lo que la podes tener puesta mientras realizas otras actividades como estar con la computadora o mirando televisión.</p>
+                <p>Tienen una forma que se adapta al cuello y los hombros, por lo que la podes tener puesta mientras
+                    realizas otras actividades como estar con la computadora o mirando televisión.</p>
             </div>
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <div id="carouselExampleControls" class="carousel slide p-3" data-ride="carousel">
@@ -232,12 +360,17 @@
         <div class="row justify-content-center align-items-top mx-auto">
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <h1 id="Computadora" class="p-3">Almohadillas para las manos</h1>
-                <p>Las netbooks, tablets, smartphones y computadoras personales ya están insertas en la realidad laboral. Sin embargo, son un arma de doble filo, ya que pueden causar lesiones en las manos.</p>
-                <p>Existen estadísticas que demuestran que aproximadamente 50% de las personas que pasan más de ocho horas diarias frente a una computadora sufren tendinitis.</p>
-                <p>La exposición a fuerzas repetitivas como la vibración, la posición anormal de la mano y la muñeca son causas de diferentes lesiones. Por esta razón, el excesivo uso de las nuevas tecnologías genera 29% más de tendinitis que otros trabajos
+                <p>Las netbooks, tablets, smartphones y computadoras personales ya están insertas en la realidad
+                    laboral. Sin embargo, son un arma de doble filo, ya que pueden causar lesiones en las manos.</p>
+                <p>Existen estadísticas que demuestran que aproximadamente 50% de las personas que pasan más de ocho
+                    horas diarias frente a una computadora sufren tendinitis.</p>
+                <p>La exposición a fuerzas repetitivas como la vibración, la posición anormal de la mano y la muñeca son
+                    causas de diferentes lesiones. Por esta razón, el excesivo uso de las nuevas tecnologías genera 29%
+                    más de tendinitis que otros trabajos
                     con menor exposición a estos dispositivos.
                 </p>
-                <p>Para el home-office de lxs que trabajan, para prevenir el callo-gamer de lxs gamer, para todes, almohadillas para el teclado y para el mouse.
+                <p>Para el home-office de lxs que trabajan, para prevenir el callo-gamer de lxs gamer, para todes,
+                    almohadillas para el teclado y para el mouse.
                 </p>
             </div>
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
@@ -274,7 +407,8 @@
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <h1 id="Fajero" class="p-3">Almohadillas para bebés</h1>
                 <p>Estas almohadillas son ideales para los cólicos de los bebés.</p>
-                <p>Además vienen con un fajero en donde se coloca la almohadilla precalentada y con el que se envuelve la cintura del bebé. Este fajero se puede lavar.</p>
+                <p>Además vienen con un fajero en donde se coloca la almohadilla precalentada y con el que se envuelve
+                    la cintura del bebé. Este fajero se puede lavar.</p>
             </div>
             <div class="col-12 col-md-6  m-3 p-3 mx-auto">
                 <div id="carouselExampleControls" class="carousel slide p-3" data-ride="carousel">
@@ -298,7 +432,7 @@
             </div>
         </div>
     </div>
-
+-->
     <footer>
         <div id="pie">
             </br>
