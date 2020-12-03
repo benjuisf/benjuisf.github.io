@@ -79,19 +79,34 @@
         </div>
     </div>
 
-    <div class="m-5">
+    <div class="p-5 bg-light">
         <div class="row">
             <div class="col-sm">
                 <h2 class="text-center">Escribinos por e-mail</h2>
                 <p class="text-center">Cualquier duda o inquietud estamos a tu disposición.</p>
             </div>
             <div class="col-sm">
-                <img src="/mail-id.png" alt="" class="rounded d-block w-50">
+                <form id="form-order">
+                    <p><label for="name">Nombre (Obligatorio)</label>
+                        <input type="text" name="name" id="name" placeholder="Mayra Pochettino" required />
+                    </p>
+
+                    <p><label for="email">E-mail (Obligatorio)</label>
+                        <input type="email" name="email" id="email" placeholder="benjuisf@gmail.com" required /></p>
+                    <p class="d-flex align-items-top">Tu consulta: 
+                        <textarea name="consulta" cols="50" rows="5"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar" />
+                    </p>
+                </form>
+
             </div>
         </div>
     </div>
 
- 
+
 
     <footer>
         <div id="pie" class="bg-primary">
