@@ -74,7 +74,6 @@ left: auto;
 }
 
 
-
 .textproduct {
  
   position: relative;
@@ -157,40 +156,6 @@ body::before {
   min-height: 100vh;
 }
 
-section {
-  margin: 0;
-  padding: 0;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  box-sizing: border-box;
-  min-height: 100vh;
-  position: relative;
-  transform-style: inherit;
-  width: 100vw;
-}
-
-section,
-section:before {
-  background: 50% 50% / cover;
-}
-
-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -201,6 +166,18 @@ section::before {
   z-index: 1;
 
 }
+
+@media screen and (max-width: 720px) {
+  .ocultamovil{
+  display:none;
+  }
+  }
+
+@media screen and (min-width: 720px) {
+  .ocultapc{
+  display:none;
+  }
+  }
 
 .cloud {
   position: absolute;
