@@ -73,13 +73,16 @@ right: auto;
 left: auto;
 }
 
-
+.textshadow {
+  text-shadow: 3px 3px 3px #cbbd9a;
+}
 .textproduct {
  
   position: relative;
   right: auto;
   display: inline-block;
 }
+
 
 .parallax {
  min-height: 400px;
@@ -277,22 +280,29 @@ sup {
 }
 
 a {
-  color: #e83e8c;
+  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #F5E7C3;
+}
 a:hover {
-  color: #c21766;
-  text-decoration: underline;
+  color: #cbbd9a !important;
+  text-decoration: underline !important;
 }
 
+
 a:not([href]):not([class]) {
-  color: inherit;
+  color: #000;
   text-decoration: none;
 }
 a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
 }
 
 pre,
